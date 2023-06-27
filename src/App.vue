@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <post-form />
+    <post-form @create="createPost" />
     <post-list :posts="posts" />
   </div>
 </template>
@@ -25,7 +25,9 @@ export default {
     };
   },
   methods: {
-    createPost() {},
+    createPost(post) {
+      this.posts.push(post);
+    },
   },
 };
 </script>
