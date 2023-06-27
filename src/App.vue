@@ -1,6 +1,15 @@
 <template>
   <div>
-    <div>Кол-во лайков</div>
+    <div>
+      <button>Like</button>
+      <button>Dislike</button>
+    </div>
+    <div>
+      Кол-во лайков: <strong>{{ likes }}</strong>
+    </div>
+    <div>
+      Кол-во дизлайков: <strong>{{ dislikes }}</strong>
+    </div>
   </div>
 </template>
 
@@ -9,6 +18,7 @@ export default {
   data() {
     return {
       likes: 0,
+      dislikes: 5,
     };
   },
 };
