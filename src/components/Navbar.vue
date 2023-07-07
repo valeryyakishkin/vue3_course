@@ -6,6 +6,9 @@
       <my-button style="margin-left: 20px" @click="$router.push('/about')"
         >О сайте</my-button
       >
+      <my-button style="margin-left: 20px" @click="$router.push('/store')"
+        >store</my-button
+      >
     </div>
   </div>
 </template>
